@@ -1,0 +1,12 @@
+@startuml
+
+start
+:Enter root folder path;
+:Create root folder;
+:Change directory to root folder;
+:Create subfolders: Images, Notes, Others;
+:Create .gitignore, LICENSE, README.md in root folder;
+:Create README.md in Images, Notes, Others;
+stop
+
+@enduml

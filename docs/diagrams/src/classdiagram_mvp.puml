@@ -1,0 +1,25 @@
+@startuml
+
+class KickOffInitializer {
+  - root_folder: string
+  + __init__(root_folder: string)
+  + initialize(): void
+}
+
+class Folder {
+  - folder_name: string
+  + __init__(folder_name: string)
+  + create(): void
+}
+
+class File {
+  - file_name: string
+  - content: string
+  + __init__(file_name: string, content: string)
+  + create(): void
+}
+
+KickOffInitializer --> Folder
+KickOffInitializer --> File
+
+@enduml
